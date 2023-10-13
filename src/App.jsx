@@ -31,7 +31,7 @@ function App() {
               <img className="absolute w-32 right-[-4%] top-[-5%] rotate-[35.4deg] z-2" src={globeIllustration} alt="Globe" />
               <div className="flex flex-col justify-start items-center text-center max-w-[70%]">
                 <img className="w-[250px] mb-4" src={devfest23Logo} alt="DevFest'23 logo" />
-                <h1 className="text-6xl font-inter font-bold mb-6">The biggest Tech event in Warri</h1>
+                <h1 className="text-6xl font-inter font-bold mb-6">The  <span className="typewriter"></span></h1>
                 <p className="text-lg font-nunito mb-10">Join us as we discuss trending issues in tech, Artificial Intelligence, Machine Learning, Cloud, Intellectual Property and Startup Funding, Policy & Governance, and so much more!</p>
                 <div className="flex justify-center items-center space-x-4">
                   <button className="flex justify-center items-center text-xl font-nunito font-medium rounded-[70px] bg-primaryBlue py-5 px-10 hover:shadow-lg text-white">Buy Tickets  <span className="text-primaryRed ml-2">🎟</span></button>
@@ -64,7 +64,7 @@ function App() {
         </section>
         <section className="py-8 bg-bgWhite">
           <div className="container mx-auto px-3">
-            <div className="relative grid grid-cols-2 gap-12 gap-y-44">
+            <div className="relative grid grid-cols-1 md:grid-cols-2 gap-12 gap-y-44">
               <img className="absolute w-32 right-[6%] top-[-35%] rotate-[35.4deg] z-2" src={globeIllustration} alt="Globe" />
               <div className="flex justify-center items-center text-2xl text-[#514D4D] font-bold">
                 <PeopleSvg />

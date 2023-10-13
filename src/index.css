@@ -74,3 +74,67 @@ body {
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
 }
+
+
+
+
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s forwards;
+  -webkit-animation: typing 13.5s forwards;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 1s linear forwards;
+  -webkit-animation: blink 1s linear forwards;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 0; display: none; }
+}
+
+/* Typewriter effect 1 */
+@keyframes typing {
+  0.0000% { content: ""; }
+  1.1395% { content: "B"; }
+  2.2791% { content: "Big"; }
+  3.4186% { content: "Bigg"; }
+  4.5581%  { content: "Bigge"; }
+  5.6977%  { content: "Bigges"; }
+  6.8372% { content: "Biggest"; }
+  7.9767% { content: "Biggest T"; }
+  9.1163%  { content: "Biggest Te"; }
+  10.2558%  { content: "Biggest Tec"; }
+
+  17.0930% { content: "Biggest Tech"; }
+  18.2326% { content: "Biggest Tech E"; }
+  19.3721% { content: "Biggest Tech Ev"; }
+  20.5116% { content: "Biggest Tech Eve"; }
+  21.6512% { content: "Biggest Tech Even"; }
+  22.7907% { content: "Biggest Tech Event"; }
+  23.9302%  { content: "Biggest Tech Event i"; }
+
+  25.0698% { content: "Biggest Tech Event in"; }
+  26.2093% { content: "Biggest Tech Event in W"; }
+  27.3488% { content: "Biggest Tech Event in Wa"; }
+  30.7674% { content: "Biggest Tech Event in War"; }
+  33.0465% { content: "Biggest Tech Event in Warr"; }
+  34.1860%,100% { content: "Biggest Tech Event in Warri"; }
+
+}
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+  
+}
