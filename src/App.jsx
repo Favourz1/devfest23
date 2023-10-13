@@ -1,6 +1,7 @@
 import devfestLogo from "./assets/images/devfest-logo.png"
 import devfest23Logo from "./assets/images/devfest23-logo.png"
 import globeIllustration from "./assets/images/globe-illustration.png"
+import avatar from "./assets/images/avatar-1.png"
 import './App.css'
 import { HandShakeSvg, LaptopSvg, PeopleSvg, PersonSvg } from "./assets/svgs"
 
@@ -8,7 +9,7 @@ function App() {
 
   return (
     <>
-      <header className="py-4 md:py-5 bg-bgWhite">
+      <header className="py-4 md:py-5 ">
         <nav className="container mx-auto !px-6 flex justify-between items-center">
           <div className="flex items-center">
             <a href="#">
@@ -41,7 +42,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="py-8 bg-bgWhite">
+        <section className="py-8 ">
           <div className="container mx-auto px-3">
             <div className="flex flex-col gap-12 md:flex-row">
               <div className="flex flex-col items-center w-full md:w-[40%] pt-10 pb-5">
@@ -62,7 +63,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="py-8 bg-bgWhite">
+        <section className="py-8 ">
           <div className="container mx-auto px-3">
             <div className="relative grid grid-cols-1 md:grid-cols-2 gap-12 gap-y-44">
               <img className="absolute w-32 right-[6%] top-[-35%] rotate-[35.4deg] z-2" src={globeIllustration} alt="Globe" />
@@ -81,6 +82,73 @@ function App() {
               <div className="flex justify-center items-center text-2xl text-[#514D4D] font-bold">
                 <HandShakeSvg />
                 <span className="ml-4">Team Collaboration</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div className="testimonial-card shadow-lg">
+          <div className="testimonial-card--header">“My career was boosted by joining this community, this is the best thing to happen since sliced bread”</div>
+          <div className="testimonial-card--footer">
+            <img src={avatar} alt="" /> <span>John Doe</span>
+          </div>
+        </div>
+        <section className="py-8 ">
+          <div className="container mx-auto px-3">
+            <div className="flex flex-col items-center bg-[#F5F5F7] rounded-[16px] py-14">
+              <h2 className="text-4xl font-bold font-inter mb-14">What Our Members Are Saying...</h2>
+              <div className="slider">
+                <div className="slide-track">
+                  <div className="slide">
+                    <div className="testimonial-card shadow-lg">
+                      <div className="testimonial-card--header">“My career was boosted by joining this community, this is the best thing to happen since sliced bread”</div>
+                      <div className="testimonial-card--footer">
+                        <img src={avatar} alt="" /> <span>John Doe</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                  </div>
+                  <div className="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                  </div>
+                  <div className="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                  </div>
+                  <div className="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                  </div>
+                  <div className="slide">
+                    fav test
+                  </div>
+                  <div className="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                  </div>
+                  <div className="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                  </div>
+                  <div className="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                  </div>
+                  <div className="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                  </div>
+                  <div className="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                  </div>
+                  <div className="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                  </div>
+                  <div className="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                  </div>
+                  <div className="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                  </div>
+                  <div className="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

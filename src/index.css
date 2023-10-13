@@ -75,7 +75,56 @@ body {
     -o-border-radius: 30px;
 }
 
+.testimonial-card{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F5E9D0;
+  height: 200px;
+  width: 250px;
+  text-align: center;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
 
+.testimonial-card--header{
+  font-size: 18px;
+  padding: 12px;
+  padding-bottom: 18px;
+  height: 75%;
+  width: 100%;
+} 
+
+.testimonial-card--footer{
+  font-size: 1.2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  height: 25%;
+  width: 100%;
+  background-color: #F9AB01;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+
+}
+
+.testimonial-card--footer img{
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  background-color: white;
+  padding: 4px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
 
 
 
@@ -95,6 +144,61 @@ body {
   animation: blink 1s linear forwards;
   -webkit-animation: blink 1s linear forwards;
 }
+
+
+/* Infinite Slider */
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, #F5F5F7 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slider {
+  background: transparent;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  /* width: calc(250px * 14); */
+  width: max-content;
+}
+
+.slider .slide {
+  /* height: 100px; */
+  /* width: 250px; */
+  /* background: white; */
+}
+
 
 @keyframes blink {
   0% { opacity: 1; }
