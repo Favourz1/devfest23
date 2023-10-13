@@ -1,9 +1,10 @@
 import devfestLogo from "./assets/images/devfest-logo.png"
 import devfest23Logo from "./assets/images/devfest23-logo.png"
 import globeIllustration from "./assets/images/globe-illustration.png"
-import avatar from "./assets/images/avatar-1.png"
 import './App.css'
 import { HandShakeSvg, LaptopSvg, PeopleSvg, PersonSvg } from "./assets/svgs"
+import TESTIMONIAL_DATA from "./data/testimonialData"
+import TestimonialCard from "./components/TestimonialCard"
 
 function App() {
 
@@ -86,68 +87,25 @@ function App() {
             </div>
           </div>
         </section>
-        <div className="testimonial-card shadow-lg">
-          <div className="testimonial-card--header">“My career was boosted by joining this community, this is the best thing to happen since sliced bread”</div>
-          <div className="testimonial-card--footer">
-            <img src={avatar} alt="" /> <span>John Doe</span>
-          </div>
-        </div>
         <section className="py-8 ">
           <div className="container mx-auto px-3">
             <div className="flex flex-col items-center bg-[#F5F5F7] rounded-[16px] py-14">
               <h2 className="text-4xl font-bold font-inter mb-14">What Our Members Are Saying...</h2>
               <div className="slider">
-                <div className="slide-track">
-                  <div className="slide">
-                    <div className="testimonial-card shadow-lg">
-                      <div className="testimonial-card--header">“My career was boosted by joining this community, this is the best thing to happen since sliced bread”</div>
-                      <div className="testimonial-card--footer">
-                        <img src={avatar} alt="" /> <span>John Doe</span>
+                <div className="slide-track space-x-10">
+                  {
+                    TESTIMONIAL_DATA.map((item) => (
+                      <div className="slide" key={item.id}>
+                        <TestimonialCard
+                          mainText={item.mainText}
+                          name={item.name}
+                          variant={item.variant}
+                        />
                       </div>
-                    </div>
-                  </div>
-                  <div className="slide">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
-                  </div>
-                  <div className="slide">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-                  </div>
-                  <div className="slide">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-                  </div>
-                  <div className="slide">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-                  </div>
-                  <div className="slide">
-                    fav test
-                  </div>
-                  <div className="slide">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-                  </div>
-                  <div className="slide">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
-                  </div>
-                  <div className="slide">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
-                  </div>
-                  <div className="slide">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
-                  </div>
-                  <div className="slide">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-                  </div>
-                  <div className="slide">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-                  </div>
-                  <div className="slide">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-                  </div>
-                  <div className="slide">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-                  </div>
-                  <div className="slide">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
-                  </div>
+                    ))
+                  }
+
+
                 </div>
               </div>
             </div>

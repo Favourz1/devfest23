@@ -80,7 +80,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F5E9D0;
   height: 200px;
   width: 250px;
   text-align: center;
@@ -107,7 +106,6 @@ body {
   padding: 15px;
   height: 25%;
   width: 100%;
-  background-color: #F9AB01;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 
@@ -126,6 +124,37 @@ body {
   -o-border-radius: 50%;
 }
 
+.testimonial-card.yellow{
+  background-color: #f5ead1;
+}
+
+.testimonial-card.yellow  .testimonial-card--footer{
+  background-color: #f9aa01;
+}
+
+.testimonial-card.green{
+  background-color: #DEF3E9;
+}
+
+.testimonial-card.green  .testimonial-card--footer{
+  background-color: #00A150;
+}
+
+.testimonial-card.red{
+  background-color: hsl(5, 55%, 89%);
+}
+
+.testimonial-card.red  .testimonial-card--footer{
+  background-color: hsl(5, 81%, 56%);
+}
+
+.testimonial-card.blue{
+  background-color: hsl(217, 52%, 89%);
+}
+
+.testimonial-card.blue  .testimonial-card--footer{
+  background-color: hsl(217, 89%, 61%);
+}
 
 
 .typewriter {

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import avatar from "../assets/images/avatar-1.png"
 const TestimonialCard = ({ mainText, name, variant }) => {
     return (
