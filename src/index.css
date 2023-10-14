@@ -8,7 +8,7 @@
 
 :root {
   /* font-family: 'Inter', sans-serif; */
-  font-family: 'Nunito', sans-serif;  
+  font-family: 'Nunito', sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-size: 14px;
@@ -19,13 +19,13 @@
   -webkit-text-size-adjust: 100%;
 }
 
-html{
+html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-*{
+* {
   transition: 0.12s ease-in-out;
   -webkit-transition: 0.12s ease-in-out;
   -moz-transition: 0.12s ease-in-out;
@@ -39,43 +39,46 @@ body {
   padding: 0;
   background-color: white;
   overflow-x: hidden;
-  overflow-y:scroll;
+  overflow-y: scroll;
 }
 
-.container.mx-auto{
+.container.mx-auto {
   padding-left: 7rem;
   padding-right: 7rem;
 }
 
-.hero-section-wrapper{
-    /*color: white;
-    */position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-align: center;
-    width: 100%;
-    z-index: 50;
-    padding: 30px 15%;
-    height: 80vh;
-    min-height: 100%;
-    min-width: 100%;
-    background-image: url("./assets/images/hero-section-bg.png");
-    background-position: center center;
-    /*background-repeat: no-repeat;
-    *//*background-size: cover;
-    */background-attachment: fixed;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+.hero-section-wrapper {
+  /*color: white;
+    */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: center;
+  width: 100%;
+  z-index: 50;
+  padding: 30px 15%;
+  height: 80vh;
+  min-height: 100%;
+  min-width: 100%;
+  background-image: url("./assets/images/hero-section-bg.png");
+  background-position: center center;
+  /*background-repeat: no-repeat;
+    */
+  /*background-size: cover;
+    */
+  background-attachment: fixed;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
 
-.testimonial-card{
+.testimonial-card {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -90,15 +93,15 @@ body {
   -o-border-radius: 16px;
 }
 
-.testimonial-card--header{
+.testimonial-card--header {
   font-size: 18px;
   padding: 12px;
   padding-bottom: 18px;
   height: 75%;
   width: 100%;
-} 
+}
 
-.testimonial-card--footer{
+.testimonial-card--footer {
   font-size: 1.2rem;
   color: white;
   display: flex;
@@ -111,7 +114,7 @@ body {
 
 }
 
-.testimonial-card--footer img{
+.testimonial-card--footer img {
   width: 40px;
   height: 40px;
   margin-right: 8px;
@@ -124,37 +127,118 @@ body {
   -o-border-radius: 50%;
 }
 
-.testimonial-card.yellow{
+.testimonial-card.yellow {
   background-color: #f5ead1;
 }
 
-.testimonial-card.yellow  .testimonial-card--footer{
+.testimonial-card.yellow .testimonial-card--footer {
   background-color: #f9aa01;
 }
 
-.testimonial-card.green{
+.testimonial-card.green {
   background-color: #DEF3E9;
 }
 
-.testimonial-card.green  .testimonial-card--footer{
+.testimonial-card.green .testimonial-card--footer {
   background-color: #00A150;
 }
 
-.testimonial-card.red{
+.testimonial-card.red {
   background-color: hsl(5, 55%, 89%);
 }
 
-.testimonial-card.red  .testimonial-card--footer{
+.testimonial-card.red .testimonial-card--footer {
   background-color: hsl(5, 81%, 56%);
 }
 
-.testimonial-card.blue{
+.testimonial-card.blue {
   background-color: hsl(217, 52%, 89%);
 }
 
-.testimonial-card.blue  .testimonial-card--footer{
+.testimonial-card.blue .testimonial-card--footer {
   background-color: hsl(217, 89%, 61%);
 }
+
+/* Team Section */
+.team-section__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: center;
+  min-height: 100%;
+  width: 100%;
+}
+
+.team-section__wrapper {
+  color: var(--primary-black);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: center;
+  min-height: 100%;
+  width: 100%;
+}
+
+.team-section__wrapper {
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.team-section__item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.team-section__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-section__item-img-wrapper {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 32px;
+  border-radius: 50%;
+  background-color: rgba(136, 136, 136, 0.5);
+  border-color: rgba(22, 24, 35, 0.12);
+  border-width: 0.5px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+}
+
+.team-section__item-img {
+  width: 100%;
+  height: 100%;
+}
+
+.team-section__item__user-wrapper {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+}
+
 
 
 .typewriter {
@@ -202,6 +286,7 @@ body {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(calc(-250px * 7));
   }
@@ -230,38 +315,114 @@ body {
 
 
 @keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 0; display: none; }
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }
 
 /* Typewriter effect 1 */
 @keyframes typing {
-  0.0000% { content: ""; }
-  1.1395% { content: "B"; }
-  2.2791% { content: "Big"; }
-  3.4186% { content: "Bigg"; }
-  4.5581%  { content: "Bigge"; }
-  5.6977%  { content: "Bigges"; }
-  6.8372% { content: "Biggest"; }
-  7.9767% { content: "Biggest T"; }
-  9.1163%  { content: "Biggest Te"; }
-  10.2558%  { content: "Biggest Tec"; }
+  0.0000% {
+    content: "";
+  }
 
-  17.0930% { content: "Biggest Tech"; }
-  18.2326% { content: "Biggest Tech E"; }
-  19.3721% { content: "Biggest Tech Ev"; }
-  20.5116% { content: "Biggest Tech Eve"; }
-  21.6512% { content: "Biggest Tech Even"; }
-  22.7907% { content: "Biggest Tech Event"; }
-  23.9302%  { content: "Biggest Tech Event i"; }
+  1.1395% {
+    content: "B";
+  }
 
-  25.0698% { content: "Biggest Tech Event in"; }
-  26.2093% { content: "Biggest Tech Event in W"; }
-  27.3488% { content: "Biggest Tech Event in Wa"; }
-  30.7674% { content: "Biggest Tech Event in War"; }
-  33.0465% { content: "Biggest Tech Event in Warr"; }
-  34.1860%,100% { content: "Biggest Tech Event in Warri"; }
+  2.2791% {
+    content: "Big";
+  }
+
+  3.4186% {
+    content: "Bigg";
+  }
+
+  4.5581% {
+    content: "Bigge";
+  }
+
+  5.6977% {
+    content: "Bigges";
+  }
+
+  6.8372% {
+    content: "Biggest";
+  }
+
+  7.9767% {
+    content: "Biggest T";
+  }
+
+  9.1163% {
+    content: "Biggest Te";
+  }
+
+  10.2558% {
+    content: "Biggest Tec";
+  }
+
+  17.0930% {
+    content: "Biggest Tech";
+  }
+
+  18.2326% {
+    content: "Biggest Tech E";
+  }
+
+  19.3721% {
+    content: "Biggest Tech Ev";
+  }
+
+  20.5116% {
+    content: "Biggest Tech Eve";
+  }
+
+  21.6512% {
+    content: "Biggest Tech Even";
+  }
+
+  22.7907% {
+    content: "Biggest Tech Event";
+  }
+
+  23.9302% {
+    content: "Biggest Tech Event i";
+  }
+
+  25.0698% {
+    content: "Biggest Tech Event in";
+  }
+
+  26.2093% {
+    content: "Biggest Tech Event in W";
+  }
+
+  27.3488% {
+    content: "Biggest Tech Event in Wa";
+  }
+
+  30.7674% {
+    content: "Biggest Tech Event in War";
+  }
+
+  33.0465% {
+    content: "Biggest Tech Event in Warr";
+  }
+
+  34.1860%,
+  100% {
+    content: "Biggest Tech Event in Warri";
+  }
 
 }
 
@@ -269,11 +430,11 @@ body {
   .typewriter::after {
     animation: none;
   }
-  
+
 }
 
-@media (max-width: 800px){
-  .container.mx-auto{
+@media (max-width: 800px) {
+  .container.mx-auto {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
