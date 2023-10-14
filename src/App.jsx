@@ -1,10 +1,16 @@
 import devfestLogo from "./assets/images/devfest-logo.png"
 import devfest23Logo from "./assets/images/devfest23-logo.png"
 import globeIllustration from "./assets/images/globe-illustration.png"
-import './App.css'
+import desktopIllustration from "./assets/images/desktop-illustration.png"
+import pointingHandEmoji from "./assets/images/pointing-hand-emoji.png"
+import xLogo from "./assets/images/x-logo.png"
+import linkedinLogo from "./assets/images/linkedin-logo.png"
+import mailIcon from "./assets/images/mail-icon.png"
+import youtubeLogo from "./assets/images/youtube-logo.png"
 import { HandShakeSvg, LaptopSvg, PeopleSvg, PersonSvg } from "./assets/svgs"
 import TESTIMONIAL_DATA from "./data/testimonialData"
 import TestimonialCard from "./components/TestimonialCard"
+import './App.css'
 
 function App() {
 
@@ -30,7 +36,7 @@ function App() {
         <section className="py-5">
           <div className="container mx-auto">
             <div className="flex flex-col hero-section-wrapper">
-              <img className="absolute w-32 right-[-4%] top-[-5%] rotate-[35.4deg] z-2" src={globeIllustration} alt="Globe" />
+              <img className="animate-pulse absolute w-32 right-[-4%] top-[-5%] rotate-[35.4deg] z-2" src={globeIllustration} alt="Globe" />
               <div className="flex flex-col justify-start items-center text-center max-w-[70%]">
                 <img className="w-[250px] mb-4" src={devfest23Logo} alt="DevFest'23 logo" />
                 <h1 className="text-6xl font-inter font-bold mb-6">The  <span className="typewriter"></span></h1>
@@ -64,9 +70,9 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="py-8 ">
+        <section className="py-14 ">
           <div className="container mx-auto px-3">
-            <div className="relative grid grid-cols-1 md:grid-cols-2 gap-12 gap-y-44">
+            <div className="relative grid grid-cols-1 md:grid-cols-2 gap-12 gap-y-36">
               <img className="absolute w-32 right-[6%] top-[-35%] rotate-[35.4deg] z-2" src={globeIllustration} alt="Globe" />
               <div className="flex justify-center items-center text-2xl text-[#514D4D] font-bold">
                 <PeopleSvg />
@@ -88,8 +94,9 @@ function App() {
           </div>
         </section>
         <section className="py-8 ">
-          <div className="container mx-auto px-3">
-            <div className="flex flex-col items-center bg-[#F5F5F7] rounded-[16px] py-14">
+          <div className="relative container mx-auto px-3">
+            <div className="relative flex flex-col items-center bg-[#F5F5F7] rounded-[16px] py-14">
+              <img className="absolute animate-pulse w-32 right-[-2%] top-[-10%] z-2" src={desktopIllustration} alt="Globe" />
               <h2 className="text-4xl font-bold font-inter mb-14">What Our Members Are Saying...</h2>
               <div className="slider">
                 <div className="slide-track space-x-10">
@@ -111,8 +118,44 @@ function App() {
             </div>
           </div>
         </section>
-
+        <section className="py-8 ">
+          <div className="relative container mx-auto px-3">
+            <div className="relative flex flex-col items-center py-14">
+              {/* <img className="absolute animate-pulse w-32 right-[-2%] top-[-10%] z-2" src={desktopIllustration} alt="Globe" /> */}
+              <h2 className="flex items-center text-4xl font-bold font-inter mb-2"> <span className="mr-2">Be There</span> <img src={pointingHandEmoji} alt="" /></h2>
+              <p className="text-2xl text-[#AEAEAE] font-semibold mb-14">don&apos;t dull.</p>
+              <div className="flex justify-center items-center space-x-10 mb-12">
+                <div className="flex flex-col justify-between items-center min-h-[180px] min-w-[200px] py-5 px-8 rounded-xl text-[#C1C1CA] bg-[#F5F5F7]">
+                  <div className="text-8xl font-bold">30</div>
+                  <div className="text-2xl">days</div>
+                </div>
+                <div className="flex flex-col justify-between items-center min-h-[180px] min-w-[200px] py-5 px-8 rounded-xl text-[#C1C1CA] bg-[#F5F5F7]">
+                  <div className="text-8xl font-bold">30</div>
+                  <div className="text-2xl">days</div>
+                </div>
+                <div className="flex flex-col justify-between items-center min-h-[180px] min-w-[200px] py-5 px-8 rounded-xl text-[#C1C1CA] bg-[#F5F5F7]">
+                  <div className="text-8xl font-bold">30</div>
+                  <div className="text-2xl">days</div>
+                </div>
+                <div className="flex flex-col justify-between items-center min-h-[180px] min-w-[200px] py-5 px-8 rounded-xl text-[#C1C1CA] bg-[#F5F5F7]">
+                  <div className="text-8xl font-bold">30</div>
+                  <div className="text-2xl">days</div>
+                </div>
+              </div>
+              <button className=" flex justify-center items-center hover:scale-95 font-nunito font-medium py-2 px-5 rounded-[41px] bg-primaryBlue text-white text-xl hover:shadow-lg">Buy Tictets <span className="text-primaryRed ml-2">🎟</span></button>
+            </div>
+          </div>
+        </section>
       </main>
+      <footer>
+        <div className="container mx-auto">
+          <div className="flex justify-between items-center">
+            <div>
+              <img src="" alt="" />
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   )
 }

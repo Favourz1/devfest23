@@ -163,8 +163,8 @@ body {
 
 .typewriter::before {
   content: "";
-  animation: typing 13.5s forwards;
-  -webkit-animation: typing 13.5s forwards;
+  animation: typing 13.5s 1.3s forwards;
+  -webkit-animation: typing 13.5s 1.3s forwards;
 }
 
 .typewriter::after {
@@ -181,9 +181,9 @@ body {
 .slider::after {
   background: linear-gradient(to right, #F5F5F7 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
-  height: 100px;
+  height: 100%;
   position: absolute;
-  width: 200px;
+  width: 150px;
   z-index: 2;
 }
 
@@ -270,4 +270,11 @@ body {
     animation: none;
   }
   
+}
+
+@media (max-width: 800px){
+  .container.mx-auto{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
