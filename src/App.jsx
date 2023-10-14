@@ -7,6 +7,7 @@ import xLogo from "./assets/images/x-logo.png"
 import linkedinLogo from "./assets/images/linkedin-logo.png"
 import mailIcon from "./assets/images/mail-icon.png"
 import youtubeLogo from "./assets/images/youtube-logo.png"
+import gdgWarriLogo from "./assets/images/gdg-warri-logo.png"
 import { HandShakeSvg, LaptopSvg, PeopleSvg, PersonSvg } from "./assets/svgs"
 import TESTIMONIAL_DATA from "./data/testimonialData"
 import TestimonialCard from "./components/TestimonialCard"
@@ -142,20 +143,32 @@ function App() {
                   <div className="text-2xl">days</div>
                 </div>
               </div>
-              <button className=" flex justify-center items-center hover:scale-95 font-nunito font-medium py-2 px-5 rounded-[41px] bg-primaryBlue text-white text-xl hover:shadow-lg">Buy Tictets <span className="text-primaryRed ml-2">🎟</span></button>
+              <button className=" flex justify-center items-center hover:scale-95 font-nunito font-medium py-3 px-6 rounded-[41px] bg-primaryBlue text-white text-xl hover:shadow-lg">Buy Tictets <span className="text-primaryRed ml-2">🎟</span></button>
             </div>
           </div>
         </section>
       </main>
-      <footer>
-        <div className="container mx-auto">
+      <footer className="bg-[#BDD4F9]">
+        <div className="container mx-auto py-10">
           <div className="flex justify-between items-center">
-            <div>
-              <img src="" alt="" />
+            <div className="flex items-center space-x-4">
+              <a href="https://twitter.com/gdg_warri">
+                <img className="w-10 h-10" src={xLogo} alt="" />
+              </a>
+              <img className="w-10 h-10" src={linkedinLogo} alt="" />
+              <img className="w-10 h-10" src={mailIcon} alt="" />
+              <a href="https://www.youtube.com/@GDGWarri">
+                <img className="w-10 h-10" src={youtubeLogo} alt="" />
+              </a>
             </div>
+            <button className=" flex justify-center items-center hover:scale-95 font-nunito font-medium py-2 px-5 rounded-[41px] bg-white text-[#111] text-xl hover:shadow-lg">Join the community <span className=" ml-2">🚀</span></button>
           </div>
+          <img className="flex justify-self-center mx-auto py-8" src={gdgWarriLogo} alt="" />
         </div>
       </footer>
+      <div className="flex justify-center items-center bg-white text-[#8F8F94] font-semibold p-2">
+        Made with ❤️ by   &nbsp;<a className="hover:underline hover:text-[#111]" href="#">Favour Okoh </a> &nbsp; & &nbsp;<a className="hover:underline hover:text-[#111]" href="#">Olalekan Owoeye</a>
+      </div>
     </>
   )
 }
