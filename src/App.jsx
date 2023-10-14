@@ -13,6 +13,7 @@ import TestimonialCard from "./components/TestimonialCard"
 import './App.css'
 import CountdownTimer from "./components/CountdownTimer"
 import Team from "./components/Team"
+import Gallery from "./components/Gallery"
 
 function App() {
 
@@ -56,10 +57,10 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="py-8" id="about-us">
+        <section className="py-8 mt-10" id="about-us">
           <div className="container mx-auto px-3">
             <div className="flex flex-col gap-12 md:flex-row">
-              <div className="flex flex-col items-center w-full md:w-[40%] pt-10 pb-5">
+              <div className="flex flex-col items-center w-full md:w-[40%] pt-10 p-8">
                 <h2 className="text-4xl font-bold font-inter mb-8">About</h2>
                 <p className="text-2xl mb-14">Whether you are a beginner or an experienced developer, GDG Warri welcomes you. Join our community and be a part of the vibrant tech scene in our city. Together, let&apos;s learn, grow, and make a difference in the world of technology.</p>
                 <a href="group/link" className="flex self-start items-center text-xl font-nunito font-medium underline">
@@ -72,7 +73,7 @@ function App() {
                 </a>
               </div>
               <div className="w-full md:w-[60%] flex items-center relative">
-                about pic
+                <Gallery />
               </div>
             </div>
           </div>
