@@ -9,7 +9,7 @@ const Team = () => {
     return (
         <section className="py-16" id="team">
             <div className="container mx-auto team-section__wrapper">
-                <div className="team-section__main-title text-4xl font-bold font-inter mb-10">Our Organizing Team</div>
+                <div className="team-section__main-title text-4xl font-bold font-inter mb-10 text-center md:text-left">Our Organizing Team</div>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-[80px] w-full">
                     <div className="team-section__item">
                         <div className="team-section__item-img-wrapper">

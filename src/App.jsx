@@ -38,7 +38,7 @@ function App() {
         </nav>
       </header>
       <main>
-        <section className="py-5">
+        <section className="py-5 mt-4 md:mt-0">
           <div className="container mx-auto">
             <div className="flex flex-col hero-section-wrapper px-4 py-5 md:px-[15%] md:py-[30px] h-full md:h-[80vh]">
               <img className="hidden md:flex animate-pulse absolute w-20 md:w-32 right-[-4%] top-[-5%] rotate-[35.4deg] z-2" src={globeIllustration} alt="Globe" />
@@ -83,19 +83,19 @@ function App() {
         <section className="py-14 ">
           <div className="container mx-auto px-3">
             <div className="relative grid grid-cols-1 md:grid-cols-2 gap-12 gap-y-12 md:gap-y-36">
-              <div className="flex justify-center items-center text-2xl text-[#514D4D] font-bold">
+              <div className="flex justify-start md:justify-center items-center text-2xl text-[#514D4D] font-bold">
                 <PeopleSvg />
                 <span className="ml-4">562 Members</span>
               </div>
-              <div className="flex justify-center items-center text-2xl text-[#514D4D] font-bold">
+              <div className="flex justify-start md:justify-center items-center text-2xl text-[#514D4D] font-bold">
                 <PersonSvg />
                 <span className="ml-4">Personal Development</span>
               </div>
-              <div className="flex justify-center items-center text-2xl text-[#514D4D] font-bold">
+              <div className="flex justify-start md:justify-center items-center text-2xl text-[#514D4D] font-bold">
                 <LaptopSvg />
                 <span className="ml-4">3+ Annual meetups</span>
               </div>
-              <div className="flex justify-center items-center text-2xl text-[#514D4D] font-bold">
+              <div className="flex justify-start md:justify-center items-center text-2xl text-[#514D4D] font-bold">
                 <HandShakeSvg />
                 <span className="ml-4">Team Collaboration</span>
               </div>
@@ -130,7 +130,7 @@ function App() {
       </main>
       <footer className="bg-[#BDD4F9]">
         <div className="container mx-auto py-10">
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-4">
               <a href="https://twitter.com/gdg_warri">
                 <img className="w-10 h-10" src={xLogo} alt="" />
