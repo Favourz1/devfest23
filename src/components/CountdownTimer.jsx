@@ -31,7 +31,7 @@ function CountdownTimer() {
     }, [targetDate]);
 
     return (
-        <section className="py-8 ">
+        <section className="py-8" id="timer">
             <div className="relative container mx-auto px-3">
                 <div className="relative flex flex-col items-center py-14">
                     {/* <img className="absolute animate-pulse w-32 right-[-2%] top-[-10%] z-2" src={desktopIllustration} alt="Globe" /> */}

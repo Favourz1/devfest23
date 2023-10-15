@@ -13,6 +13,8 @@ export default {
       colors: {
         primaryBlue: "#4285F4",
         primaryRed: "#EA4335",
+        primaryYellow: "#F9AB01",
+        primaryGreen: "#00A150",
       }
     },
   },
