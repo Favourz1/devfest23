@@ -60,7 +60,7 @@ function App() {
         </section>
         <section className="py-8 mt-0 md:mt-10" id="about-us">
           <div className="container mx-auto px-3">
-            <div className="relative flex flex-col gap-12 md:flex-row">
+            <div className="overflow-x-hidden relative flex flex-col gap-12 md:flex-row">
               <div className="flex flex-col items-center w-full md:w-[40%] pt-10 p-8">
                 <h2 className="text-4xl font-bold font-inter mb-8">About</h2>
                 <p className="text-lg md:text-2xl text-center md:text-left mb-14">Whether you are a beginner or an experienced developer, GDG Warri welcomes you. Join our community and be a part of the vibrant tech scene in our city. Together, let&apos;s learn, grow, and make a difference in the world of technology.</p>
@@ -73,7 +73,7 @@ function App() {
                   </span>
                 </a>
               </div>
-              <div className="overflow-x-hidden relative w-full md:w-[60%] flex items-center">
+              <div className="relative w-full md:w-[60%] flex items-center">
                 <img className="absolute left-[-30px] top-0 w-20" src={arrowYellow} alt="" />
                 <Gallery />
               </div>
@@ -130,7 +130,7 @@ function App() {
       </main>
       <footer className="bg-[#BDD4F9]">
         <div className="container mx-auto py-10">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
             <div className="flex items-center space-x-4">
               <a href="https://twitter.com/gdg_warri">
                 <img className="w-10 h-10" src={xLogo} alt="" />

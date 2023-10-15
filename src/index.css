@@ -437,6 +437,9 @@ body {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
+  .slider::before, .slider::after {
+    width: 70px;
+  }
 }
 
 @media (min-width: 800px) {
