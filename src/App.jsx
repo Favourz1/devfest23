@@ -63,7 +63,7 @@ function App() {
             <div className="relative flex flex-col gap-12 md:flex-row">
               <div className="flex flex-col items-center w-full md:w-[40%] pt-10 p-8">
                 <h2 className="text-4xl font-bold font-inter mb-8">About</h2>
-                <p className="text-2xl text-center md:text-left mb-14">Whether you are a beginner or an experienced developer, GDG Warri welcomes you. Join our community and be a part of the vibrant tech scene in our city. Together, let&apos;s learn, grow, and make a difference in the world of technology.</p>
+                <p className="text-lg md:text-2xl text-center md:text-left mb-14">Whether you are a beginner or an experienced developer, GDG Warri welcomes you. Join our community and be a part of the vibrant tech scene in our city. Together, let&apos;s learn, grow, and make a difference in the world of technology.</p>
                 <a href="https://gdg.community.dev/gdg-warri/" className="group flex self-center md:self-start items-center text-xl font-nunito font-medium underline">
                   <span>Learn More</span>
                   <span className="ml-1">
@@ -73,7 +73,7 @@ function App() {
                   </span>
                 </a>
               </div>
-              <div className="relative w-full md:w-[60%] flex items-center">
+              <div className="overflow-x-hidden relative w-full md:w-[60%] flex items-center">
                 <img className="absolute left-[-30px] top-0 w-20" src={arrowYellow} alt="" />
                 <Gallery />
               </div>
