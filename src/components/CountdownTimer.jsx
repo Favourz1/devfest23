@@ -35,7 +35,7 @@ function CountdownTimer() {
             <div className="relative container mx-auto px-3">
                 <div className="relative flex flex-col items-center py-14">
                     {/* <img className="absolute animate-pulse w-32 right-[-2%] top-[-10%] z-2" src={desktopIllustration} alt="Globe" /> */}
-                    <h2 className="flex items-center text-4xl font-bold font-inter mb-2"> <span className="mr-2">Be There</span> <img src={pointingHandEmoji} alt="" /></h2>
+                    <h2 data-aos="zoom-in" data-aos-easing="ease-in-out-cubic" className="flex items-center text-4xl font-bold font-inter mb-2"> <span className="mr-2">Be There</span> <img src={pointingHandEmoji} alt="" /></h2>
                     <p className="text-2xl text-[#AEAEAE] font-semibold mb-14">don&apos;t dull.</p>
                     <div className="flex flex-wrap justify-center items-center space-x-2 md:space-x-10 mb-12">
                         <div className="flex flex-col justify-between items-center min-h-auto  md:min-h-[180px] min-w-auto md:min-w-[200px] py-5 px-4 md:px-8 rounded-xl text-[#C1C1CA] bg-transparent md:bg-[#F5F5F7]">

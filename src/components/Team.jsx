@@ -11,7 +11,7 @@ const Team = () => {
             <div className="container mx-auto team-section__wrapper">
                 <div className="team-section__main-title text-4xl font-bold font-inter mb-10 text-center md:text-left">Our Organizing Team</div>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-[80px] w-full">
-                    <div className="team-section__item">
+                    <div className="team-section__item" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="300">
                         <div className="team-section__item-img-wrapper">
                             <img
                                 className="team-section__item-img object-cover"
@@ -26,7 +26,7 @@ const Team = () => {
                             <div className="team-section__item__user-title">Sponsorship <span className="hidden md:block">And Partnership</span></div>
                         </div>
                     </div>
-                    <div className="team-section__item">
+                    <div className="team-section__item" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="320">
                         <div className="team-section__item-img-wrapper">
                             <img
                                 className="team-section__item-img"
@@ -41,7 +41,7 @@ const Team = () => {
                             <div className="team-section__item__user-title">Organizer</div>
                         </div>
                     </div>
-                    <div className="team-section__item">
+                    <div className="team-section__item" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="340">
                         <div className="team-section__item-img-wrapper">
                             <img
                                 className="team-section__item-img"
@@ -56,7 +56,7 @@ const Team = () => {
                             <div className="team-section__item__user-title">Co-organizer</div>
                         </div>
                     </div>
-                    <div className="team-section__item">
+                    <div className="team-section__item" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="300">
                         <div className="team-section__item-img-wrapper">
                             <img
                                 className="team-section__item-img"
@@ -71,7 +71,7 @@ const Team = () => {
                             <div className="team-section__item__user-title">Co-organizer</div>
                         </div>
                     </div>
-                    <div className="team-section__item">
+                    <div className="team-section__item" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="320">
                         <div className="team-section__item-img-wrapper">
                             <img
                                 className="team-section__item-img"
@@ -86,7 +86,7 @@ const Team = () => {
                             <div className="team-section__item__user-title">Co-organizer</div>
                         </div>
                     </div>
-                    <div className="team-section__item">
+                    <div className="team-section__item" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="340">
                         <div className="team-section__item-img-wrapper">
                             <img
                                 className="team-section__item-img object-cover"

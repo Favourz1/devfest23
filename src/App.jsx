@@ -11,13 +11,20 @@ import arrowYellow from "./assets/images/arrow-yellow.png"
 import { HandShakeSvg, LaptopSvg, PeopleSvg, PersonSvg } from "./assets/svgs"
 import TESTIMONIAL_DATA from "./data/testimonialData"
 import TestimonialCard from "./components/TestimonialCard"
-import './App.css'
 import CountdownTimer from "./components/CountdownTimer"
 import Team from "./components/Team"
 import Gallery from "./components/Gallery"
+import './App.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react"
 
 function App() {
 
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, [])
   return (
     <>
       <header className="py-4 md:py-5 ">
@@ -38,19 +45,23 @@ function App() {
         </nav>
       </header>
       <main>
-        <section className="py-5 mt-10 md:mt-0">
+        <section className="py-5 mt-6 md:mt-0">
           <div className="container mx-auto">
             <div className="flex flex-col hero-section-wrapper px-4 py-5 md:px-[15%] md:py-[30px] h-full md:h-[80vh]">
               <img className="hidden md:flex animate-pulse absolute w-20 md:w-32 right-[-4%] top-[-5%] rotate-[35.4deg] z-2" src={globeIllustration} alt="Globe" />
-              <div className="flex flex-col justify-start items-center text-center max-w-[70%]">
+              <div className="flex flex-col justify-start items-center text-center max-w-full md:max-w-[70%]">
                 <img className="w-[250px] mb-4" src={devfest23Logo} alt="DevFest'23 logo" />
                 <h1 className="text-6xl font-inter font-bold mb-6">The  <span className="typewriter"></span></h1>
-                <p className="text-lg font-nunito mb-10">Celebrate Innovation, Explore Technology, and Ignite Your Imagination at DevFest 2023 – Where Ideas Become Reality! <br /> <span className="hidden md:flex">Join us as we discuss trending issues in tech, Artificial Intelligence, Machine Learning, Cloud, Intellectual Property and Startup Funding, Policy & Governance, and so much more!</span></p>
+                <p data-aos="fade" data-aos-easing="linear" data-aos-delay="400" className="text-lg font-nunito mb-10">
+                  <span >Celebrate Innovation, Explore Technology, and Ignite Your Imagination at DevFest 2023 – Where Ideas Become Reality!</span>
+                  <br />
+                  <span className="">Join us as we discuss trending issues in tech, Artificial Intelligence, Machine Learning, Cloud, Intellectual Property and Startup Funding, Policy & Governance, and so much more!</span>
+                </p>
                 <div className="flex flex-col md:flex-row justify-center items-center space-x-0 md:space-x-4 space-y-4 md:space-y-0">
-                  <a href="https://gdg.community.dev/events/details/google-gdg-warri-presents-devfest-warri-2023/">
+                  <a data-aos="fade-up-right" data-aos-easing="linear" data-aos-delay="500" href="https://gdg.community.dev/events/details/google-gdg-warri-presents-devfest-warri-2023/">
                     <button className="flex justify-center items-center text-xl font-nunito font-medium rounded-[70px] bg-primaryBlue py-5 px-10 hover:shadow-lg text-white">Buy Tickets  <span className="text-primaryRed ml-2">🎟</span></button>
                   </a>
-                  <a href="https://sessionize.com/devfest-warri-2023">
+                  <a data-aos="fade-up-left" data-aos-easing="linear" data-aos-delay="500" href="https://sessionize.com/devfest-warri-2023">
                     <button className="flex justify-center items-center text-xl font-nunito font-medium rounded-[70px] text-primaryBlue border border-primaryBlue bg-transparent py-5 px-6 md:px-10 hover:shadow-lg">Apply to speak 🎙</button>
                   </a>
                 </div>
@@ -59,13 +70,13 @@ function App() {
           </div>
         </section>
         <CountdownTimer />
-        <section className="py-8 mt-0 md:mt-10" id="about-us">
+        <section className=" overflow-x-hidden md:overflow-x-visible py-8 mt-0 md:mt-10" id="about-us">
           <div className="container mx-auto px-3">
-            <div className="overflow-x-hidden md:overflow-x-visible relative flex flex-col gap-12 md:flex-row">
+            <div className="relative flex flex-col gap-12 md:flex-row">
               <div className="flex flex-col items-center w-full md:w-[40%] pt-10 p-8">
-                <h2 className="text-4xl font-bold font-inter mb-8">About</h2>
-                <p className="text-lg md:text-2xl text-center md:text-left mb-14">Whether you are a beginner or an experienced developer, GDG Warri welcomes you. Join our community and be a part of the vibrant tech scene in our city. Together, let&apos;s learn, grow, and make a difference in the world of technology.</p>
-                <a href="https://gdg.community.dev/gdg-warri/" className="group flex self-center md:self-start items-center text-xl font-nunito font-medium underline">
+                <h2 data-aos="fade-up" data-aos-easing="ease-in-out-cubic" className="text-4xl font-bold font-inter mb-8">About</h2>
+                <p data-aos="fade-up" data-aos-easing="ease-in-out-cubic" data-aos-delay="300" className="text-lg md:text-2xl text-center md:text-left mb-14">Whether you are a beginner or an experienced developer, GDG Warri welcomes you. Join our community and be a part of the vibrant tech scene in our city. Together, let&apos;s learn, grow, and make a difference in the world of technology.</p>
+                <a data-aos="fade-right" data-aos-easing="ease-in-out-cubic" data-aos-delay="300" href="https://gdg.community.dev/gdg-warri/" className="group flex self-center md:self-start items-center text-xl font-nunito font-medium underline">
                   <span>Learn More</span>
                   <span className="ml-1">
                     <svg className="group-hover:translate-x-1 group-hover:-translate-y-1" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 23 20" fill="none">
@@ -84,26 +95,26 @@ function App() {
         <section className="py-14 ">
           <div className="container mx-auto px-3">
             <div className="relative grid grid-cols-1 md:grid-cols-2 gap-12 gap-y-12 md:gap-y-36">
-              <div className="flex justify-start md:justify-center items-center text-2xl text-[#514D4D] font-bold">
+              <div data-aos="fade-down" data-aos-easing="ease-in-out-cubic" data-aos-delay="300" className="flex justify-start md:justify-center items-center text-2xl text-[#514D4D] font-bold">
                 <PeopleSvg />
                 <span className="ml-4">562 Members</span>
               </div>
-              <div className="flex justify-start md:justify-center items-center text-2xl text-[#514D4D] font-bold">
+              <div data-aos="fade-down" data-aos-easing="ease-in-out-cubic" data-aos-delay="330" className="flex justify-start md:justify-center items-center text-2xl text-[#514D4D] font-bold">
                 <PersonSvg />
                 <span className="ml-4">Personal Development</span>
               </div>
-              <div className="flex justify-start md:justify-center items-center text-2xl text-[#514D4D] font-bold">
+              <div data-aos="fade-down" data-aos-easing="ease-in-out-cubic" data-aos-delay="350" className="flex justify-start md:justify-center items-center text-2xl text-[#514D4D] font-bold">
                 <LaptopSvg />
                 <span className="ml-4">3+ Annual meetups</span>
               </div>
-              <div className="flex justify-start md:justify-center items-center text-2xl text-[#514D4D] font-bold">
+              <div data-aos="fade-down" data-aos-easing="ease-in-out-cubic" data-aos-delay="380" className="flex justify-start md:justify-center items-center text-2xl text-[#514D4D] font-bold">
                 <HandShakeSvg />
                 <span className="ml-4">Team Collaboration</span>
               </div>
             </div>
           </div>
         </section>
-        <section className="py-8 ">
+        <section className="py-8">
           <div className="relative container mx-auto px-3">
             <div className="relative flex flex-col items-center bg-[#F5F5F7] rounded-[16px] py-14">
               <img className="absolute animate-pulse w-32 right-[-2%] top-[-10%] z-2" src={desktopIllustration} alt="Globe" />
@@ -127,7 +138,7 @@ function App() {
           </div>
         </section>
         <Team />
-      </main>
+      </main >
       <footer className="bg-[#BDD4F9]">
         <div className="container mx-auto py-10">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
@@ -148,7 +159,7 @@ function App() {
           <img className="flex justify-self-center mx-auto py-8" src={gdgWarriLogo} alt="" />
         </div>
       </footer>
-      <div className="flex justify-center items-center bg-white text-[#8F8F94] font-semibold p-2 text-md md:text-lg">
+      <div className="flex justify-center items-center bg-white text-[#8F8F94] font-semibold p-2 text-sm md:text-lg">
         Made with ❤️ by   &nbsp;<a className="hover:underline hover:text-[#111]" href="https://www.linkedin.com/in/favour-okoh/">Favour Okoh </a> &nbsp; & &nbsp;<a className="hover:underline hover:text-[#111]" href="https://linkedin.com/in/olaowoeye">Olalekan Owoeye</a>
       </div>
     </>
