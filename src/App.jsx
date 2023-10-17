@@ -38,7 +38,7 @@ function App() {
         </nav>
       </header>
       <main>
-        <section className="py-5 mt-10 md:mt-0">
+        <section className="py-5 mt-20 md:mt-0">
           <div className="container mx-auto">
             <div className="flex flex-col hero-section-wrapper px-4 py-5 md:px-[15%] md:py-[30px] h-full md:h-[80vh]">
               <img className="hidden md:flex animate-pulse absolute w-20 md:w-32 right-[-4%] top-[-5%] rotate-[35.4deg] z-2" src={globeIllustration} alt="Globe" />
