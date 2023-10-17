@@ -45,7 +45,7 @@ function App() {
               <div className="flex flex-col justify-start items-center text-center max-w-[70%]">
                 <img className="w-[250px] mb-4" src={devfest23Logo} alt="DevFest'23 logo" />
                 <h1 className="text-6xl font-inter font-bold mb-6">The  <span className="typewriter"></span></h1>
-                <p className="text-lg font-nunito mb-10">Join us as we discuss trending issues in tech, Artificial Intelligence, Machine Learning, Cloud, Intellectual Property and Startup Funding, Policy & Governance, and so much more!</p>
+                <p className="text-lg font-nunito mb-10">Celebrate Innovation, Explore Technology, and Ignite Your Imagination at DevFest 2023 – Where Ideas Become Reality! <br />Join us as we discuss trending issues in tech, Artificial Intelligence, Machine Learning, Cloud, Intellectual Property and Startup Funding, Policy & Governance, and so much more!</p>
                 <div className="flex flex-col md:flex-row justify-center items-center space-x-0 md:space-x-4 space-y-4 md:space-y-0">
                   <a href="https://gdg.community.dev/events/details/google-gdg-warri-presents-devfest-warri-2023/">
                     <button className="flex justify-center items-center text-xl font-nunito font-medium rounded-[70px] bg-primaryBlue py-5 px-10 hover:shadow-lg text-white">Buy Tickets  <span className="text-primaryRed ml-2">🎟</span></button>
@@ -58,9 +58,10 @@ function App() {
             </div>
           </div>
         </section>
+        <CountdownTimer />
         <section className="py-8 mt-0 md:mt-10" id="about-us">
           <div className="container mx-auto px-3">
-            <div className="overflow-x-hidden relative flex flex-col gap-12 md:flex-row">
+            <div className="overflow-x-hidden md:overflow-x-visible relative flex flex-col gap-12 md:flex-row">
               <div className="flex flex-col items-center w-full md:w-[40%] pt-10 p-8">
                 <h2 className="text-4xl font-bold font-inter mb-8">About</h2>
                 <p className="text-lg md:text-2xl text-center md:text-left mb-14">Whether you are a beginner or an experienced developer, GDG Warri welcomes you. Join our community and be a part of the vibrant tech scene in our city. Together, let&apos;s learn, grow, and make a difference in the world of technology.</p>
@@ -125,7 +126,6 @@ function App() {
             </div>
           </div>
         </section>
-        <CountdownTimer />
         <Team />
       </main>
       <footer className="bg-[#BDD4F9]">
@@ -148,7 +148,7 @@ function App() {
           <img className="flex justify-self-center mx-auto py-8" src={gdgWarriLogo} alt="" />
         </div>
       </footer>
-      <div className="flex justify-center items-center bg-white text-[#8F8F94] font-semibold p-2">
+      <div className="flex justify-center items-center bg-white text-[#8F8F94] font-semibold p-2 text-md md:text-lg">
         Made with ❤️ by   &nbsp;<a className="hover:underline hover:text-[#111]" href="https://www.linkedin.com/in/favour-okoh/">Favour Okoh </a> &nbsp; & &nbsp;<a className="hover:underline hover:text-[#111]" href="https://linkedin.com/in/olaowoeye">Olalekan Owoeye</a>
       </div>
     </>
