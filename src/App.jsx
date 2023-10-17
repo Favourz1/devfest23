@@ -38,14 +38,14 @@ function App() {
         </nav>
       </header>
       <main>
-        <section className="py-5 mt-20 md:mt-0">
+        <section className="py-5 mt-10 md:mt-0">
           <div className="container mx-auto">
             <div className="flex flex-col hero-section-wrapper px-4 py-5 md:px-[15%] md:py-[30px] h-full md:h-[80vh]">
               <img className="hidden md:flex animate-pulse absolute w-20 md:w-32 right-[-4%] top-[-5%] rotate-[35.4deg] z-2" src={globeIllustration} alt="Globe" />
               <div className="flex flex-col justify-start items-center text-center max-w-[70%]">
                 <img className="w-[250px] mb-4" src={devfest23Logo} alt="DevFest'23 logo" />
                 <h1 className="text-6xl font-inter font-bold mb-6">The  <span className="typewriter"></span></h1>
-                <p className="text-lg font-nunito mb-10">Celebrate Innovation, Explore Technology, and Ignite Your Imagination at DevFest 2023 – Where Ideas Become Reality! <br />Join us as we discuss trending issues in tech, Artificial Intelligence, Machine Learning, Cloud, Intellectual Property and Startup Funding, Policy & Governance, and so much more!</p>
+                <p className="text-lg font-nunito mb-10">Celebrate Innovation, Explore Technology, and Ignite Your Imagination at DevFest 2023 – Where Ideas Become Reality! <br /> <span className="hidden md:flex">Join us as we discuss trending issues in tech, Artificial Intelligence, Machine Learning, Cloud, Intellectual Property and Startup Funding, Policy & Governance, and so much more!</span></p>
                 <div className="flex flex-col md:flex-row justify-center items-center space-x-0 md:space-x-4 space-y-4 md:space-y-0">
                   <a href="https://gdg.community.dev/events/details/google-gdg-warri-presents-devfest-warri-2023/">
                     <button className="flex justify-center items-center text-xl font-nunito font-medium rounded-[70px] bg-primaryBlue py-5 px-10 hover:shadow-lg text-white">Buy Tickets  <span className="text-primaryRed ml-2">🎟</span></button>
