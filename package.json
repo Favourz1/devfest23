@@ -27,5 +27,6 @@
     "sass": "^1.69.3",
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.5"
-  }
+  },
+  "homepage": "https://devfestwarri.com"
 }
