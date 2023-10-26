@@ -55,7 +55,7 @@ function CountdownTimer() {
                             <div className="text-lg md:text-2xl">seconds</div>
                         </div>
                     </div>
-                    <a href="https://gdg.community.dev/events/details/google-gdg-warri-presents-devfest-warri-2023/">
+                    <a  target="_blank"  rel="noreferrer" href="https://tix.africa/dfwarri23">
                         <button className=" flex justify-center items-center hover:scale-95 font-nunito font-medium py-3 px-6 rounded-[41px] bg-primaryBlue text-white text-xl hover:shadow-lg">Buy Tictets <span className="text-primaryRed ml-2">🎟</span></button>
                     </a>
                 </div>
