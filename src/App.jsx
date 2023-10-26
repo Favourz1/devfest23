@@ -39,8 +39,8 @@ function App() {
             <li className="text-xl font-medium"><a href="#timer">Events</a></li>
             <li className="text-xl font-medium"><a href="#team">Team</a></li>
           </ul>
-          <a href="https://gdg.community.dev/gdg-warri/">
-            <button className=" flex justify-center items-center font-nunito font-medium py-2 px-5 rounded-[41px] bg-[#00A150] text-white text-xl hover:shadow-lg">Join us 🚀</button>
+          <a href="https://tix.africa/dfwarri23">
+            <button className=" flex justify-center items-center font-nunito font-medium py-2 px-5 rounded-[41px] bg-[#00A150] text-white text-xl hover:shadow-lg">Get A VIP Ticket 🚀</button>
           </a>
         </nav>
       </header>
@@ -61,9 +61,9 @@ function App() {
                   <a target="_blank"  rel="noreferrer" data-aos="fade-up-right" data-aos-easing="linear" data-aos-delay="500" data-aos-once="true" href="https://tix.africa/dfwarri23">
                     <button className="flex justify-center items-center text-xl font-nunito font-medium rounded-[70px] bg-primaryBlue py-5 px-10 hover:shadow-lg text-white">Get A VIP Ticket<span className="text-primaryRed ml-2">🎟</span></button>
                   </a>
-                  <a data-aos="fade-up-left" data-aos-easing="linear" data-aos-delay="500" data-aos-once="true" href="https://sessionize.com/devfest-warri-2023">
+                  {/* <a data-aos="fade-up-left" data-aos-easing="linear" data-aos-delay="500" data-aos-once="true" href="https://sessionize.com/devfest-warri-2023">
                     <button className="flex justify-center items-center text-xl font-nunito font-medium rounded-[70px] text-primaryBlue border border-primaryBlue bg-transparent py-5 px-6 md:px-10 hover:shadow-lg">Apply to speak 🎙</button>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
