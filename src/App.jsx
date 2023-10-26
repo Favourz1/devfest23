@@ -39,8 +39,8 @@ function App() {
             <li className="text-xl font-medium"><a href="#timer">Events</a></li>
             <li className="text-xl font-medium"><a href="#team">Team</a></li>
           </ul>
-          <a href="https://tix.africa/dfwarri23">
-            <button className=" flex justify-center items-center font-nunito font-medium py-2 px-5 rounded-[41px] bg-[#00A150] text-white text-xl hover:shadow-lg">Get A VIP Ticket 🚀</button>
+          <a target="_blank"  rel="noreferrer" href="https://tix.africa/dfwarri23">
+            <button className=" flex justify-center items-center font-nunito font-medium py-2 px-5 rounded-[41px] bg-[#00A150] text-white text-xl hover:shadow-lg">Get VIP Tickets <span className="hidden md:flex">🚀</span></button>
           </a>
         </nav>
       </header>
