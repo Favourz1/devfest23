@@ -59,7 +59,7 @@ function App() {
                 </p>
                 <div className="flex flex-col md:flex-row justify-center items-center space-x-0 md:space-x-4 space-y-4 md:space-y-0">
                   <a data-aos="fade-up-right" data-aos-easing="linear" data-aos-delay="500" href="https://gdg.community.dev/events/details/google-gdg-warri-presents-devfest-warri-2023/">
-                    <button className="flex justify-center items-center text-xl font-nunito font-medium rounded-[70px] bg-primaryBlue py-5 px-10 hover:shadow-lg text-white">Buy Tickets  <span className="text-primaryRed ml-2">🎟</span></button>
+                    <button className="flex justify-center items-center text-xl font-nunito font-medium rounded-[70px] bg-primaryBlue py-5 px-10 hover:shadow-lg text-white">Get A VIP Ticket<span className="text-primaryRed ml-2">🎟</span></button>
                   </a>
                   <a data-aos="fade-up-left" data-aos-easing="linear" data-aos-delay="500" href="https://sessionize.com/devfest-warri-2023">
                     <button className="flex justify-center items-center text-xl font-nunito font-medium rounded-[70px] text-primaryBlue border border-primaryBlue bg-transparent py-5 px-6 md:px-10 hover:shadow-lg">Apply to speak 🎙</button>
