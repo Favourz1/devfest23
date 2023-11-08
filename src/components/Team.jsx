@@ -4,6 +4,7 @@ import kelvinForterta from "../assets/images/kelvin_forteta.jpg"
 import marthaFreeborn from "../assets/images/martha_freeborn.webp"
 import tejiri from "../assets/images/oghenetejiri_agbodoroba.png"
 import onome from "../assets/images/onome_commander.jpeg"
+// import techDan from "../assets/images/onoriukpe_daniel.webp"
 
 const Team = () => {
     return (

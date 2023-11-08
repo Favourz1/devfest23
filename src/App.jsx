@@ -18,6 +18,7 @@ import './App.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react"
+import Speakers from "./components/Speakers"
 
 function App() {
 
@@ -39,7 +40,7 @@ function App() {
             <li className="text-xl font-medium"><a href="#timer">Events</a></li>
             <li className="text-xl font-medium"><a href="#team">Team</a></li>
           </ul>
-          <a target="_blank"  rel="noreferrer" href="https://tix.africa/dfwarri23">
+          <a target="_blank" rel="noreferrer" href="https://tix.africa/dfwarri23">
             <button className=" flex justify-center items-center font-nunito font-medium py-2 px-5 rounded-[41px] bg-[#00A150] text-white text-xl hover:shadow-lg">Get <span className="hidden md:flex">&nbsp;VIP&nbsp;</span> Tickets <span className="hidden md:flex">🚀</span></button>
           </a>
         </nav>
@@ -58,7 +59,7 @@ function App() {
                   <span className="">Join us as we discuss trending issues in tech, Artificial Intelligence, Machine Learning, Cloud, Intellectual Property and Startup Funding, Policy & Governance, and so much more!</span>
                 </p>
                 <div className="flex flex-col md:flex-row justify-center items-center space-x-0 md:space-x-4 space-y-4 md:space-y-0">
-                  <a target="_blank"  rel="noreferrer" data-aos="fade-up-right" data-aos-easing="linear" data-aos-delay="500" data-aos-once="true" href="https://tix.africa/dfwarri23">
+                  <a target="_blank" rel="noreferrer" data-aos="fade-up-right" data-aos-easing="linear" data-aos-delay="500" data-aos-once="true" href="https://tix.africa/dfwarri23">
                     <button className="flex justify-center items-center text-xl font-nunito font-medium rounded-[70px] bg-primaryBlue py-5 px-10 hover:shadow-lg text-white">Get A VIP Ticket<span className="text-primaryRed ml-2">🎟</span></button>
                   </a>
                   {/* <a data-aos="fade-up-left" data-aos-easing="linear" data-aos-delay="500" data-aos-once="true" href="https://sessionize.com/devfest-warri-2023">
@@ -92,6 +93,7 @@ function App() {
             </div>
           </div>
         </section>
+        <Speakers />
         <section className="py-14 ">
           <div className="container mx-auto px-3">
             <div className="relative grid grid-cols-1 md:grid-cols-2 gap-12 gap-y-12 md:gap-y-36">
