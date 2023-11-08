@@ -14,6 +14,7 @@ const Speakers = () => {
                             bgImage={item.bgImage}
                             organization={item.organization}
                             role={item.role}
+                            about={item.about}
                         />
                     ))}
                 </div>
