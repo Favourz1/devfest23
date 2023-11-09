@@ -53,7 +53,7 @@ const SPEAKERS_DATA = [
         name: "Daniel Onoriukpe",
         organization: "Toptal Core Team",
         role: "Sofware Engineer",
-        about: ``
+        about: `Daniel is a Front-End Engineer with five years of experience in TypeScript, JavaScript, React, with a focus on creating responsive and accessible web applications. His work has consistently elevated the user experience for a broad range of digital platforms. Committed to the development community, Daniel regularly collaborates with the GDG co-organizers, and shares his knowledge through 1:1 mentorship and local meetups, showcasing his dedication to collective growth and innovation in the field.`
     },
     {
         bgImage: "bg-laolu",

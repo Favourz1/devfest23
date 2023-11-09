@@ -4,7 +4,7 @@ import kelvinForterta from "../assets/images/kelvin_forteta.jpg"
 import marthaFreeborn from "../assets/images/martha_freeborn.webp"
 import tejiri from "../assets/images/oghenetejiri_agbodoroba.png"
 import onome from "../assets/images/onome_commander.jpeg"
-// import techDan from "../assets/images/onoriukpe_daniel.webp"
+import techDan from "../assets/images/speakers/onoriukpe_daniel.webp"
 
 const Team = () => {
     return (
@@ -98,6 +98,21 @@ const Team = () => {
                         <div className="team-section__item__user-wrapper">
                             <div className="team-section__item__user-name mb-4 md:mb-0">
                                 Kelvin Forteta
+                            </div>
+                            <div className="team-section__item__user-title">Co-organizer</div>
+                        </div>
+                    </div>
+                    <div className="team-section__item" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="340">
+                        <div className="team-section__item-img-wrapper">
+                            <img
+                                className="team-section__item-img object-cover"
+                                src={techDan}
+                                alt=""
+                            />
+                        </div>
+                        <div className="team-section__item__user-wrapper">
+                            <div className="team-section__item__user-name mb-4 md:mb-0">
+                                Daniel Onoriukpe
                             </div>
                             <div className="team-section__item__user-title">Co-organizer</div>
                         </div>
